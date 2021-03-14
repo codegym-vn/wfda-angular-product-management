@@ -27,7 +27,6 @@ export class CategoryDeleteComponent implements OnInit {
   getCategory(id: number) {
     return this.categoryService.findById(id).subscribe(category => {
       this.categoryForm = new FormGroup({
-        id: new FormControl(category.id),
         name: new FormControl(category.name),
       });
     });
