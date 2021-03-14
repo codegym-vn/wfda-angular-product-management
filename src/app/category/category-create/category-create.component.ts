@@ -9,7 +9,6 @@ import {CategoryService} from '../../service/category.service';
 })
 export class CategoryCreateComponent implements OnInit {
   categoryForm: FormGroup = new FormGroup({
-    id: new FormControl(),
     name: new FormControl(),
   });
 
